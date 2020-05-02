@@ -10,6 +10,14 @@ $(document).ready(function() {
 		$('.error').show().text(e);
 	}
 
+  $('main > *').on('mousemove', function(event) {
+    event.stopPropagation();
+  });
+
+  $('main > *').on('mousedown', function(event) {
+    event.stopPropagation();
+  });
+
 	$('.js-ripples-disable').on('click', function() {
 		$('body, main').ripples('destroy');
 		$(this).hide();
