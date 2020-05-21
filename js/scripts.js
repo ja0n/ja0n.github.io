@@ -10,8 +10,10 @@ $(document).ready(function() {
 		$('.error').show().text(e);
 	}
 
+  $('main > *').draggable();
+
   $('main > *').on('mousemove', function(event) {
-    event.stopPropagation();
+    // event.stopPropagation();
   });
 
   $('main > *').on('mousedown', function(event) {
