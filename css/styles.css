@@ -31,3 +31,46 @@ main {
   bottom: 0;
   right: 0;
 }
+
+.filter-black {
+  filter: url(#remove-black) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 1px);
+  color: black;
+}
+
+.awesome-box {
+  position: relative;
+}
+
+.awesome-box .window:first-child {
+  padding-bottom: 0px;
+}
+
+.awesome-box .window-body {
+  margin: 16px;
+  text-align: center;
+}
+
+.awesome-box .window.filter-black {
+  margin-top: -1px;
+  border: 1px solid transparent;
+  margin-right: -1px;
+  border-top: 0;
+}
+
+.awesome-box .window-body h5,
+.awesome-box .window-body p {
+  text-shadow: rgb(209, 87, 158) -2px 0px 2px, rgb(209, 87, 158) 0px -2px 2px, rgb(239, 241, 243) 2px 0px 2px, rgb(239, 241, 243) 0px 2px 2px;
+}
+
+.awesome-box .window-body h5 {
+  font-size: 120px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.awesome-box .window-body p {
+  margin: 0;
+  font-size: 46px;
+  letter-spacing: 4px;
+  line-height: 1.2;
+}
