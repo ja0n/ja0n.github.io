@@ -37,6 +37,11 @@ main {
   color: black;
 }
 
+#routine pre {
+  background: none;
+  box-shadow: none;
+}
+
 .awesome-box {
   position: relative;
 }
