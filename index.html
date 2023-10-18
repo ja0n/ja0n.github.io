@@ -166,7 +166,12 @@
         "position: relative; left: -457px; top: -472px;",
         "position: relative; left: 488px; top: -858px;"
     ];
-    loadPositions(positions);
+
+    const isLandscape = window.matchMedia("(orientation: landscape)").matches
+
+    if (isLandscape) {
+      loadPositions(positions);
+    }
   </script>
 </body>
 </html>
