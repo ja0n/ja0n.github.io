@@ -18,6 +18,15 @@ main {
   max-width: 60vw;
 }
 
+main > .window {
+  margin: 32px;
+}
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
 .box {
   background: white;
   vertical-align: middle;
