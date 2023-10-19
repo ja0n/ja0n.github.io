@@ -46,7 +46,7 @@ main > .window {
   color: black;
 }
 
-#routine pre {
+pre.camouflage {
   background: none;
   box-shadow: none;
 }

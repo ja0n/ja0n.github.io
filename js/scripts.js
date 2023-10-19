@@ -34,3 +34,20 @@ $(document).ready(function() {
 	});
 
 });
+
+function randomizePosition(target, parentSelector) {
+  const parent = target.closest(parentSelector);
+  const offset = 700;
+  const spaceWidth = document.body.offsetHeight - parseInt(parent.clientHeight) - offset;
+  const spaceHeight = document.body.offsetWidth - parseInt(parent.clientWidth) - offset;
+  parent.style.top = Math.round(Math.random() * spaceWidth) + 'px';
+  parent.style.left = Math.round(Math.random() * spaceHeight) + 'px';
+}
+
+function asciiDancer () {
+  // TODO
+}
+
+function asciiArtFetcher () {
+  // TODO
+}
